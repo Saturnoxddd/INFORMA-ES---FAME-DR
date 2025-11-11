@@ -1,58 +1,62 @@
+/* Fundo geral */
 body {
-  margin: 0;
-  height: 100vh;
   background: linear-gradient(135deg, #b3e5fc, #e1f5fe);
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-family: 'Poppins', sans-serif;
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
 }
 
-.painel {
-  text-align: center;
-}
-
+/* Título */
 .titulo {
-  font-size: 2rem;
-  color: #5aa9e6;
-  text-shadow: 0 0 10px #b3e5fc;
+  color: #2196f3;
+  text-align: center;
+  font-size: 2em;
   margin-bottom: 20px;
+  text-shadow: 0 0 10px rgba(33, 150, 243, 0.5);
 }
 
+/* Cartão principal */
 .cartao {
-  background: rgba(255, 255, 255, 0.25);
-  border: 1px solid rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(12px);
   border-radius: 20px;
-  backdrop-filter: blur(15px);
-  box-shadow: 0 0 30px rgba(173, 216, 230, 0.5);
+  box-shadow: 0 0 20px rgba(33, 150, 243, 0.3);
   width: 300px;
-  padding: 20px;
-  animation: flutuar 4s ease-in-out infinite;
+  padding: 25px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-@keyframes flutuar {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
-}
-
+/* Foto da DR */
 .foto {
   width: 100px;
   height: 100px;
-  border-radius: 50%;
   object-fit: cover;
-  border: 2px solid #b3e5fc;
-  box-shadow: 0 0 20px #b3e5fc;
+  border-radius: 50%;
+  border: 3px solid #90caf9;
+  box-shadow: 0 0 10px rgba(144, 202, 249, 0.8);
   margin-bottom: 15px;
 }
 
-.info h2, .info p {
-  color: #0b3c5d;
-  font-weight: 500;
-  margin: 6px 0;
+/* Informações */
+.info h2 {
+  color: #0d47a1;
+  font-size: 1.2em;
+  margin-bottom: 10px;
 }
 
+.info p {
+  color: #1565c0;
+  font-size: 0.95em;
+  line-height: 1.4em;
+}
+
+/* Destaque nos spans */
 .info span {
-  color: #5aa9e6;
-  font-weight: 600;
+  font-weight: bold;
+  color: #0d47a1;
 }
