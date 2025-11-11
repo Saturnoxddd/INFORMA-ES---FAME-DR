@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(135deg, #b3e5fc, #e1f5fe);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+}
+
+.painel {
+  text-align: center;
+}
+
+.titulo {
+  font-size: 2rem;
+  color: #5aa9e6;
+  text-shadow: 0 0 10px #b3e5fc;
+  margin-bottom: 20px;
+}
+
+.cartao {
+  background: rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 0 30px rgba(173, 216, 230, 0.5);
+  width: 300px;
+  padding: 20px;
+  animation: flutuar 4s ease-in-out infinite;
+}
+
+@keyframes flutuar {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+.foto {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #b3e5fc;
+  box-shadow: 0 0 20px #b3e5fc;
+  margin-bottom: 15px;
+}
+
+.info h2, .info p {
+  color: #0b3c5d;
+  font-weight: 500;
+  margin: 6px 0;
+}
+
+.info span {
+  color: #5aa9e6;
+  font-weight: 600;
+}
